@@ -1,0 +1,65 @@
+/* LOGIN PAGE CSS STARTS */
+.login-page-container {
+  background-color: var(--main-background-color);
+}
+
+.card {
+  width: 400px;
+  padding: 15px;
+  background-color: var(--main-background-color);
+  color: var(--bright-text-color);
+  border: 1px solid var(--bright-background-color);
+}
+.underline {
+  background-color: var(--bright-background-color);
+  width: 15%;
+  height: 3px;
+  margin: 0 auto;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.form-input {
+  border: 2px solid var(--secondary-background-color);
+  outline: none;
+  transition: all 0.5s ease-out;
+}
+.form-input:hover {
+  background-color: var(--third-background-color);
+}
+.required {
+  color: var(--bright-background-color);
+}
+.elephant-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* LOGIN PAGE VALIDATION CSS */
+.form-group p {
+  visibility: hidden;
+  padding-top: 8px;
+}
+
+.form-group.success .form-input {
+  border: 2px solid var(--success-color);
+}
+.form-group.success p {
+  visibility: visible;
+  color: var(--success-color);
+}
+
+.form-group.error .form-input {
+  border: 2px solid var(--error-color);
+}
+.form-group.error p {
+  visibility: visible;
+  color: var(--error-color);
+}
+/* LOGIN PAGE VALIDATION CSS ENDS */
+
+/* LOGIN PAGE CSS ENDS */

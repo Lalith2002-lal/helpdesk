@@ -1,0 +1,386 @@
+/* LINKING FONT FAMILY JOSEFIN */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+:root {
+  /* BACKGROUND COLORS */
+  --main-background-color: #000000;
+  --content-background-color: rgb(33, 35, 38);
+  --secondary-background-color: #fff;
+  --third-background-color: #a3a3a3;
+  --bright-background-color: #e9204f;
+  --table-background-color: #f1f1f1;
+  /* HEADER BACKGROUND COLOR */
+  --fixed-header-color: rgb(0, 0, 0, 0.9);
+  /* FOOTER COLOR */
+  --footer-background-color: #1b1b1b;
+  /* TEXT COLORS */
+  --bright-text-color: #ffffff;
+  --medium-text-color: #747474;
+  --dark-text-color: #000000;
+
+  /* FORM VALIDATION COLORS */
+  --success-color: #39ff14;
+  --error-color: #ff2400;
+
+  /* HOVER BACKGROUND COLOR */
+  --hover-background-color: rgb(0, 0, 0, 0.1);
+  --hover-background-color-bright: rgba(233, 32, 79, 0.9);
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.01em;
+  background-color: var(--main-background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dark-text {
+  color: var(--dark-text-color);
+}
+
+.med-text {
+  color: var(--medium-text-color);
+}
+.bright-text {
+  color: var(--bright-text-color);
+}
+
+/* BUTTON CSS STARTS */
+.primary_button,
+.swal-button {
+  padding: 10px 40px;
+  background-color: var(--bright-background-color);
+  border: 1px solid var(--bright-background-color);
+  outline: none;
+}
+.primary_button:hover,
+.primary_button:focus,
+.primary_button:active {
+  background-color: var(--hover-background-color);
+  color: var(--bright-text-color);
+  border: 1px solid var(--bright-background-color);
+}
+
+.swal-button {
+  color: var(--bright-text-color);
+  box-shadow: none;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+}
+.swal-button:not([disabled]):hover,
+.swal-button:not([disabled]):focus,
+.swal-button:not([disabled]):active {
+  background-color: var(--hover-background-color-bright) !important;
+  color: var(--bright-text-color);
+  border: 1px solid var(--bright-background-color);
+}
+
+.swal-button:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.curvy_button {
+  border-radius: 30px;
+}
+.dark_button {
+  color: var(--dark-text-color);
+}
+.bright_button {
+  color: var(--bright-text-color);
+}
+.action_button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 5px 20px;
+  color: var(--dark-text-color);
+  outline: none;
+  border-radius: 30px;
+  transition: all 0.6s ease;
+}
+.action_button:hover,
+.action_button:focus,
+.action_button:active {
+  color: var(--bright-text-color);
+  background-color: var(--main-background-color);
+}
+
+/* CSS FOR THE OBJECT FITS */
+.object_fit_contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.object_fit_cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* CSS FOR THE OBJECT FITS ENDS */
+
+/* PADDING CSS STARTS */
+.padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* PADDING CSS ENDS */
+
+/* CSS FOR THE ERROR AND THE SUCCESS */
+.error {
+  color: var(--error-color);
+}
+/* CSS FOR THE ERROR AND THE SUCCESS  ENDS*/
+
+/* HEADER CSS STARTS */
+
+.header_div {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  background-color: var(--main-background-color);
+}
+/* HEADER CSS ENDS */
+
+/* TICKETS PAGE CSS STARTS */
+.ticket_page_container {
+  overflow: hidden;
+}
+.content_container {
+  flex: 1;
+  /* padding: 20px; */
+}
+.header_container {
+  width: 100%;
+  background-color: var(--main-background-color);
+}
+.tickets_container {
+  background-color: var(--content-background-color);
+  color: var(--bright-text-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.tickets_header {
+  display: flex;
+  align-items: center;
+}
+
+.ticket_page_title_div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+}
+.tickets_path_list {
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0;
+}
+.tickets_path::before {
+  content: "/";
+  float: left;
+  padding: 0 8px 0 8px;
+  color: var(--bright-text-color);
+}
+
+.bar_over {
+  height: 5px;
+  background-color: var(--medium-text-color);
+}
+.progress-bar {
+  height: 100%;
+  width: 50%;
+  background-color: var(--bright-background-color);
+}
+.card_group {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+.card {
+  border: 2px solid var(--bright-background-color);
+  padding: 20px;
+}
+.card_group,
+.card {
+  color: var(--bright-text-color);
+  background-color: var(--content-background-color);
+}
+.card_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card_right_number.increment {
+  color: var(--success-color);
+}
+.card_right_number.decrement {
+  color: var(--error-color);
+}
+.input_block input,
+.input_block select {
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+.table th {
+  white-space: nowrap;
+  border-top: 1px solid var(--third-background-color);
+  padding: 1rem 0.75rem;
+}
+.table_row {
+  overflow-x: scroll;
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: var(--table-background-color);
+}
+/* MODAL CSS STARTS */
+.modal-content {
+  background-color: var(--secondary-background-color);
+  color: var(--dark-text-color);
+}
+.modal-title {
+  text-align: center;
+  flex: 1;
+}
+.modal-header .btn-close {
+  margin: 0;
+}
+.form_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 15px 0 15px;
+}
+.form_group.description {
+  gap: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.form_group .form_select,
+.form_group .form_input {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  border: 1px solid var(--third-background-color);
+  outline: none;
+}
+.form_input.file {
+  border: none;
+}
+/* MODAL CSS ENDS */
+/* TICKETS PAGE CSS ENDS */
+
+/* MEDIA QUERY STARTS HERE */
+
+/* Extra small: <576px */
+@media screen and (max-width: 575px) {
+  /* GLOBAL MQ STARTS */
+  .primary_button {
+    padding: 10px 20px;
+  }
+  /* GLOBAL MQ ENDS */
+
+  /* MQ FOR THE TICKETS PAGE */
+  .tickets_path_list {
+    display: none;
+  }
+  .card_group {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+  .filter_row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  /* MQ FOR THE TICKETS PAGE ENDS */
+}
+
+/* Small: ≥576px */
+@media screen and (min-width: 576px) {
+  /* MQ FOR THE TICKETS PAGE */
+  .tickets_path_list {
+    display: none;
+  }
+  .card_group {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+  .filter_row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  /* MQ FOR THE TICKETS PAGE ENDS */
+}
+
+/* Medium: ≥768px */
+@media screen and (min-width: 768px) {
+}
+
+/* Large: ≥992px */
+@media screen and (min-width: 992px) {
+}
+
+/* X-Large: ≥1200px */
+@media screen and (min-width: 1200px) {
+  /* MQ FOR THE TICKETS PAGE STARTS */
+  .sidebar_main {
+    width: 300px;
+  }
+  .content_container {
+    width: calc(100% - 300px);
+  }
+  .tickets_container {
+    border-top-left-radius: 20px;
+  }
+  .tickets_path_list {
+    display: flex;
+  }
+  .card_group {
+    flex-direction: row;
+  }
+  .card {
+    width: 25%;
+  }
+  .filter_row {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+  }
+  /* MQ FOR THE TICKETS PAGE ENDS */
+}
+
+/* XX-Large: ≥1400px */
+@media screen and (min-width: 1400px) {
+}
+
+/* MEDIA QUERY ENDS HERE */

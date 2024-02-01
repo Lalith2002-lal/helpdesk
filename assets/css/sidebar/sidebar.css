@@ -1,0 +1,155 @@
+/* SIDEBAR CSS STARTS HERE */
+.sidebar_container {
+  width: 300px;
+  background: var(--dark-text-color);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  overflow-y: scroll;
+  transition: 0.6s ease;
+  transition-property: left;
+  color: var(--bright-text-color);
+  z-index: 1;
+}
+.sidebar_row {
+  width: 100%;
+  height: 100%;
+}
+.sidebar_container.active {
+  left: 0px;
+  z-index: 1;
+}
+.sidebar {
+  padding: 20px 20px 0 20px;
+}
+.side_logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5%;
+}
+.logo_side {
+  width: 100px;
+  height: 50px;
+}
+
+.logo .close_btn {
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--third-background-color);
+  transition: all 0.5s ease;
+}
+.close_btn:hover,
+.close_btn:active,
+.close_btn:focus {
+  color: var(--bright-text-color);
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+  height: 95%;
+}
+.menu .menu_items .item a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 60px;
+  color: var(--bright-text-color);
+  transition: 0.6s ease;
+}
+
+.menu .menu_items .item a:hover,
+.user_profile_container:hover {
+  background-color: var(--bright-background-color);
+}
+
+.user_profile_container:hover {
+  transition: 0.6s ease;
+}
+
+.user_profile {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 20px;
+}
+
+.user_img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user_name a {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--bright-text-color);
+}
+.menu_btn {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  cursor: pointer;
+  color: var(--bright-text-color);
+}
+/* SIDEBAR CSS ENDS HERE */
+
+/* MEDIA QUERY STARTS HERE */
+
+/* Extra small: <576px */
+@media screen and (max-width: 575px) {
+  /* FOR THE SIDEBAR MQ */
+  .sidebar_container {
+    left: -300px;
+  }
+  .close_btn {
+    visibility: visible;
+  }
+  /* FOR THE SIDEBAR MQ ENDS */
+}
+
+/* Small: ≥576px */
+@media screen and (min-width: 576px) {
+  /* FOR THE SIDEBAR MQ */
+  .sidebar_container {
+    left: -300px;
+  }
+  .close_btn {
+    visibility: visible;
+  }
+  /* FOR THE SIDEBAR MQ ENDS */
+}
+
+/* Medium: ≥768px */
+@media screen and (min-width: 768px) {
+}
+
+/* Large: ≥992px */
+@media screen and (min-width: 992px) {
+}
+
+/* X-Large: ≥1200px */
+@media screen and (min-width: 1200px) {
+  /* FOR THE SIDEBAR MQ */
+  .sidebar_container {
+    left: 0;
+  }
+  .close_btn {
+    visibility: hidden;
+  }
+  .menu_btn {
+    display: none;
+  }
+  /* FOR THE SIDEBAR MQ ENDS */
+}
+
+/* XX-Large: ≥1400px */
+@media screen and (min-width: 1400px) {
+}
+
+/* MEDIA QUERY ENDS HERE */
